@@ -1,0 +1,68 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meme-slider {
+    overflow: hidden;
+    width: 40%;
+    height: 40%;
+}
+
+.radio1 {
+    position:absolute;
+    margin-top: 32%;
+    margin-left: 15vw;
+    cursor: pointer;
+}
+.radio2 {
+    position:absolute;
+    margin-top: 32%;
+    margin-left: 18vw;
+    cursor: pointer;
+}
+.radio3 {
+    position:absolute;
+    margin-top: 32%;
+    margin-left: 21vw;
+    cursor: pointer;
+}
+.radio4 {
+    position:absolute;
+    margin-top: 32%;
+    margin-left: 24vw;
+    cursor: pointer;
+}
+
+.images {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.image {
+    width:25%;
+    transition: all .6s ease;
+}
+
+.image img {
+    width: 100%;
+    height: 70%;
+}
+
+.radio1:checked ~ .image1 {
+    margin-left: 0;
+}
+
+.radio2:checked ~ .image1 {
+    margin-left: -25%;
+}
+
+.radio3:checked ~ .image1 {
+    margin-left: -50%;
+}
+
+.radio4:checked ~ .image1 {
+    margin-left: -75%;
+}
